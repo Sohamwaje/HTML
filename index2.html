@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- start nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar w/ text</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="REgistrationLayout.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us!</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    Navbar text with an inline element
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav bar -->
+
+    <!-- start register -->
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-lg-8 sm-lg-8">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h2>
+                            <pre>
+ <u style="color: red;">Wel</u>Come
+        <b style="color:rgb(107, 107, 20)"> To </b>
+             <b style="color: rgb(40, 16, 63);">Website</b></pre>
+                        </h2>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error tempore praesentium
+                            expedita similique iste explicabo voluptates! Cum vel perspiciatis necessitatibus quia! Modi
+                            ratione voluptate tempora iure asperiores itaque nemo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h3><u style="color: chocolate;">Log</u>in Here </h3>
+                        <form action="profile.html" onsubmit="call()" id="form">
+                            <input id="a" type="text" placeholder="user id or email">
+                            <input id="b" type="password" placeholder="password">
+                            <br>
+                            <button type="submit">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div>
+        <p id="c"></p>
+    </div>
+
+
+    <script>
+        function call() {
+
+            function fun() {
+
+            }
+            var name = document.getElementById("a").value
+
+            var pass = document.getElementById("b").value
+            document.getElementById("c").innerHTML = name + "  " + pass
+
+            if (name == "admin" && pass == 123) {
+                // document.getElementById("form").innerHTML="profile.html"
+            }
+
+        }
+    </script>
+</body>
+
+</html>
